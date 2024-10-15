@@ -15,7 +15,7 @@ const NavbarTop = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div>
-            <img src={Logo} alt="be-princess-logo" className="w-[160px]" />
+            <img src={Logo} alt="be-princess-logo" className="h-16" />
           </div>
 
           {/* search bar */}
