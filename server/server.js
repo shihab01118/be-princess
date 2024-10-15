@@ -7,7 +7,7 @@ const cors = require("cors");
 // database connection
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.4ujeh.mongodb.net/`
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.4lkgu.mongodb.net/`
   )
   .then(() => console.log("Database Connected Successfully!"))
   .catch((error) => console.error(error));
