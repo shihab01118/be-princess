@@ -8,7 +8,7 @@ import { FaAngleDown } from "react-icons/fa6";
 
 const NavbarBottom = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white drop-shadow-md">
       <Container>
         <div className="flex justify-between items-center">
           <CategoryButton />
