@@ -6,7 +6,7 @@ const HomeLayout = () => {
   return (
     <div>
       <Navbar />
-      <div className="pt-[136px]">
+      <div className="pt-[136px] font-workSans">
         <Outlet />
       </div>
       <Footer />

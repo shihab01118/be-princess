@@ -14,11 +14,11 @@ const NewArrival = () => {
           {images.map((image) => (
             <div
               key={image.id}
-              className="p-6 bg-white drop-shadow rounded-xl"
+              className="px-4 py-6 bg-white drop-shadow rounded-xl"
             >
               <div className="relative">
                 <img src={image.img} alt="new-arrivals" className="mb-5" />
-                <span className="absolute top-1.5 right-0 text-xs bg-[#FFCED4] py-1 px-1.5 tracking-widest text-primary font-medium">
+                <span className="absolute top-1.5 right-3 text-xs bg-[#FFCED4] py-1 px-1.5 tracking-widest text-primary font-medium">
                   -{image.sale}
                 </span>
               </div>
@@ -35,8 +35,10 @@ const NewArrival = () => {
                   {image.newPrice} TK
                 </span>
               </div>
-              <div className="mt-6">
-                <button className="text-sm font-semibold text-white py-3 bg-primary rounded-md w-full">Add To Cart</button>
+              <div className="mt-6 w-[80%] mx-auto">
+                <button className="text-sm font-semibold text-white py-3 bg-primary rounded-md w-full">
+                  Add To Cart
+                </button>
               </div>
             </div>
           ))}
