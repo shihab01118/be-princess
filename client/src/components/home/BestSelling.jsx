@@ -5,13 +5,17 @@ import Container from "@/components/ui/Container";
 import Title from "@/components/ui/Title";
 
 // images
-import newImg from "@/assets/images/new1.png";
+import img1 from "@/assets/images/b1.png";
+import img2 from "@/assets/images/b2.png";
+import img3 from "@/assets/images/b3.jpg";
+import img4 from "@/assets/images/b4.png";
 
-const NewArrival = () => {
-  return (
-    <Container>
-      <div className="my-20">
-        <Title title="New Arrivals" />
+
+const BestSelling = () => {
+    return (
+        <Container>
+        <div className="my-20">
+        <Title title="Best Selling" />
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <div
@@ -20,7 +24,7 @@ const NewArrival = () => {
             >
               <div className="relative">
                 <img src={product.img} alt="new-arrivals" className="mb-5 rounded-xl" />
-                <span className="absolute top-1.5 right-3 text-[10px] bg-[#FFCED4] py-[2px] px-2 tracking-[2px] text-[#E30C64] font-semibold">
+                <span className="absolute top-1.5 right-3 text-xs bg-[#FFCED4] py-[2px] px-2 tracking-[2px] text-[#E30C64] font-medium">
                   -{product.sale}
                 </span>
               </div>
@@ -47,42 +51,42 @@ const NewArrival = () => {
         </div>
       </div>
     </Container>
-  );
+    );
 };
 
-export default NewArrival;
+export default BestSelling;
 
 const products = [
-  {
-    id: 1,
-    img: newImg,
-    title: "Sheglam Color Bloom Liquid Blush Matte Finish - Cutie Pie",
-    sale: "32%",
-    oldPrice: "1,100.00",
-    newPrice: "745.00",
-  },
-  {
-    id: 2,
-    img: newImg,
-    title: "Sheglam Color Bloom Liquid Blush Matte Finish - Cutie Pie",
-    sale: "32%",
-    oldPrice: "1,100.00",
-    newPrice: "745.00",
-  },
-  {
-    id: 3,
-    img: newImg,
-    title: "Sheglam Color Bloom Liquid Blush Matte Finish - Cutie Pie",
-    sale: "32%",
-    oldPrice: "1,100.00",
-    newPrice: "745.00",
-  },
-  {
-    id: 4,
-    img: newImg,
-    title: "Sheglam Color Bloom Liquid Blush Matte Finish - Cutie Pie",
-    sale: "32%",
-    oldPrice: "1,100.00",
-    newPrice: "745.00",
-  },
-];
+    {
+      id: 1,
+      img: img1,
+      title: "AXIS-Y Dark Spot Correcting Glow Serum - 5ml",
+      sale: "64%",
+      oldPrice: "500.00",
+      newPrice: "199.00",
+    },
+    {
+      id: 2,
+      img: img2,
+      title: "Cosrx Salicylic Acid Daily Gentle Cleanser - 150 ml",
+      sale: "14%",
+      oldPrice: "11,050.00",
+      newPrice: "899.00",
+    },
+    {
+      id: 3,
+      img: img3,
+      title: "AXIS-Y Dark Spot Correcting Glow Serum - 50ml",
+      sale: "39%",
+      oldPrice: "1,800.00",
+      newPrice: "1,099.00",
+    },
+    {
+      id: 4,
+      img: img4,
+      title: "The Ordinary Niacinamide 10%+Zinc 1% - 30ml",
+      sale: "36%",
+      oldPrice: "1,650.00",
+      newPrice: "1,050.00",
+    },
+  ];
