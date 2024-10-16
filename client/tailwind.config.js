@@ -16,8 +16,8 @@ export default {
       colors: {
         white: "var(--white)",
         black: "var(--black)",
-        card: {
-          DEFAULT: "hsl(var(--card))",
+        "card-title": {
+          DEFAULT: "var(--card-title)",
           foreground: "hsl(var(--card-foreground))",
         },
         popover: {

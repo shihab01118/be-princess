@@ -7,7 +7,7 @@
   :root {
     --white: #ffffff;
     --black: #020202;
-    --card: 0 0% 100%;
+    --card-title: #555555;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
